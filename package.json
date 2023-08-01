@@ -1,45 +1,23 @@
 {
-    "name": "my-profile",
-    "scripts": {
-      "dev": "next dev",
-      "build": "next build",
-      "postbuild": "next-sitemap",
-      "export": "next export",
-      "start": "next start",
-      "lint": "next lint",
-      "fmt": "prettier --write ."
-    },
-    "dependencies": {
-      "@emotion/react": "^11.10.6",
-      "@emotion/server": "^11.10.0",
-      "@fontsource/open-sans": "^5.0.0",
-      "@mantine/core": "^6.0.2",
-      "@mantine/hooks": "^6.0.2",
-      "@mantine/next": "^6.0.2",
-      "@types/node": "18.16.16",
-      "@types/react": "^18.2.13",
-      "@types/react-dom": "^18.2.6",
-      "dayjs": "^1.11.7",
-      "eslint": "8.42.0",
-      "eslint-config-next": "13.4.7",
-      "next": "13.4.7",
-      "next-seo": "^6.0.0",
-      "next-sitemap": "^4.0.5",
-      "react": "18.2.0",
-      "react-dom": "18.2.0",
-      "react-icons": "^4.8.0",
-      "typescript": "5.0.4"
-    },
-    "devDependencies": {
-      "@trivago/prettier-plugin-sort-imports": "^4.1.1",
-      "@types/ejs": "^3.1.2",
-      "@types/gtag.js": "^0.0.12",
-      "@typescript-eslint/eslint-plugin": "^5.55.0",
-      "ejs": "^3.1.9",
-      "eslint-config-prettier": "^8.7.0",
-      "prettier": "^2.8.4",
-      "rss-parser": "^3.12.0",
-      "ts-node": "^10.9.1",
-      "tsconfig-paths": "^4.1.2"
-    }
+  "name": "dev-profile",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.4.12",
+    "@types/node": "20.4.5",
+    "@types/react": "18.2.18",
+    "@types/react-dom": "18.2.7",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "next": "13.4.12",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.1.6"
   }
+}
