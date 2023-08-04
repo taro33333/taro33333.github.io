@@ -2,6 +2,8 @@
 import { NextPage } from "next";
 import { useRouter } from "next/router";
 import { useCallback, useMemo } from "react";
+import Socials from "./Socials";
+import { config } from "../../../config";
 
 const HomePage: NextPage = () => {
   const router = useRouter();
@@ -26,7 +28,7 @@ const HomePage: NextPage = () => {
   );
 
   return (
-    <div>test</div>
+    <div><Socials socials={config.socials} /></div>
   );
 };
 
