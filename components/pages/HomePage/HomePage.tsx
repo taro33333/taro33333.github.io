@@ -3,7 +3,9 @@ import { NextPage } from "next";
 import { useRouter } from "next/router";
 import { useCallback, useMemo } from "react";
 import Socials from "./Socials";
+import User from "./User";
 import { config } from "../../../config";
+import { Box, Divider, Stack, Tabs, Title } from "@mantine/core";
 
 const HomePage: NextPage = () => {
   const router = useRouter();
@@ -28,7 +30,10 @@ const HomePage: NextPage = () => {
   );
 
   return (
-    <div><Socials socials={config.socials} /></div>
+    <Stack spacing="lg" mb="md">
+    <User user={config.user} />
+    <Socials socials={config.socials} />
+  </Stack>
   );
 };
 
