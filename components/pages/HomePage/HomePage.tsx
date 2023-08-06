@@ -5,6 +5,7 @@ import { useCallback, useMemo } from "react";
 import Socials from "./Socials";
 import MoreLink from "./MoreLink";
 import User from "./User";
+import Section from "../util/Section";
 import { config } from "../../../config";
 import { Box, Divider, Stack, Tabs, Title } from "@mantine/core";
 
@@ -39,6 +40,11 @@ const HomePage: NextPage = () => {
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <MoreLink href={config.socials.zenn.url} />
       </Box>
+      <Section title="Contact">
+        <Stack>
+          <Socials socials={config.socials} />
+        </Stack>
+      </Section>
     </Box>
   );
 };
