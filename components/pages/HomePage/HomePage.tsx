@@ -5,6 +5,7 @@ import { useCallback, useMemo } from "react";
 import Socials from "./Socials";
 import MoreLink from "./MoreLink";
 import User from "./User";
+import EmailButton from "./EmailButton";
 import Section from "../util/Section";
 import { config } from "../../../config";
 import { Box, Divider, Stack, Tabs, Title } from "@mantine/core";
@@ -43,6 +44,7 @@ const HomePage: NextPage = () => {
       <Section title="Contact">
         <Stack>
           <Socials socials={config.socials} />
+          <EmailButton email={config.user.email} />
         </Stack>
       </Section>
     </Box>
