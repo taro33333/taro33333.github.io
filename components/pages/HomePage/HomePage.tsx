@@ -41,6 +41,7 @@ const HomePage: NextPage = () => {
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <MoreLink href={config.socials.zenn.url} />
       </Box>
+      <Divider />
       <Section title="Contact">
         <Stack>
           <Socials socials={config.socials} />
