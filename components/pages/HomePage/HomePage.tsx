@@ -38,9 +38,29 @@ const HomePage: NextPage = () => {
         <User user={config.user} />
         <Socials socials={config.socials} />
       </Stack>
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <MoreLink href={config.socials.zenn.url} />
-      </Box>
+      <Tabs value={activeTab} onTabChange={handleChangeTab}>
+        <Tabs.List
+          position="center"
+          sx={(theme) => ({ marginBottom: theme.spacing.sm })}
+        >
+          <Tabs.Tab value="about">About</Tabs.Tab>
+          <Tabs.Tab value="works">Works</Tabs.Tab>
+          <Tabs.Tab value="notes">Notes</Tabs.Tab>
+        </Tabs.List>
+        <Tabs.Panel value="about">
+
+        </Tabs.Panel>
+        <Tabs.Panel value="works">
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <MoreLink href={config.socials.zenn.url} />
+          </Box>
+        </Tabs.Panel>
+        <Tabs.Panel value="notes">
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <MoreLink href={config.socials.zenn.url} />
+          </Box>
+        </Tabs.Panel>
+      </Tabs>
       <Divider />
       <Section title="Contact">
         <Stack>
