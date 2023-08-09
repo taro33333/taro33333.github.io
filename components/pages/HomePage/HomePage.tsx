@@ -5,6 +5,7 @@ import { useCallback, useMemo } from "react";
 import Socials from "./Socials";
 import MoreLink from "./MoreLink";
 import User from "./User";
+import CertificationList from "./CertificationList";
 import EmailButton from "./EmailButton";
 import Section from "../util/Section";
 import { config } from "../../../config";
@@ -50,6 +51,13 @@ const HomePage: NextPage = () => {
         <Tabs.Panel value="about">
 
         </Tabs.Panel>
+
+        <Divider />
+
+        <Section title="Certification">
+          <CertificationList certifications={config.certifications} />
+        </Section>
+
         <Tabs.Panel value="works">
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <MoreLink href={config.socials.zenn.url} />
