@@ -7,6 +7,7 @@ import MoreLink from "./MoreLink";
 import User from "./User";
 import CertificationList from "./CertificationList";
 import EmailButton from "./EmailButton";
+import SkillList from "./SkillList";
 import Section from "../util/Section";
 import { config } from "../../../config";
 import { Box, Divider, Stack, Tabs, Title } from "@mantine/core";
@@ -49,14 +50,28 @@ const HomePage: NextPage = () => {
           <Tabs.Tab value="notes">Notes</Tabs.Tab>
         </Tabs.List>
         <Tabs.Panel value="about">
+          <Section title="Skill">
+            <Stack>
+              {config.skillGroups.map((skillGroup) => (
+                <Box key={skillGroup.name}>
+                  <Title order={3} mb="sm" sx={{ textAlign: "center" }}>
+                    {skillGroup.name}
+                  </Title>
+                  <SkillList skills={skillGroup.skills} />
+                </Box>
+              ))}
+            </Stack>
+          </Section>
+
+          <Divider />
+
+          <Section title="Certification">
+            <CertificationList certifications={config.certifications} />
+          </Section>
+
+          <Divider />
 
         </Tabs.Panel>
-
-        <Divider />
-
-        <Section title="Certification">
-          <CertificationList certifications={config.certifications} />
-        </Section>
 
         <Tabs.Panel value="works">
           <Box sx={{ display: "flex", justifyContent: "center" }}>
