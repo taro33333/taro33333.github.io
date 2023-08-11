@@ -8,6 +8,7 @@ import User from "./User";
 import CertificationList from "./CertificationList";
 import EmailButton from "./EmailButton";
 import SkillList from "./SkillList";
+import ExperienceTimeline from "./ExperienceTimeline";
 import Section from "../util/Section";
 import { config } from "../../../config";
 import { Box, Divider, Stack, Tabs, Title } from "@mantine/core";
@@ -71,6 +72,10 @@ const HomePage: NextPage = () => {
 
           <Divider />
 
+          <Section title="Experience" sx={{ display: "flex", justifyContent: "center" }}>
+            <ExperienceTimeline experiences={config.experiences} />
+          </Section>
+
         </Tabs.Panel>
 
         <Tabs.Panel value="works">
@@ -79,9 +84,13 @@ const HomePage: NextPage = () => {
           </Box>
         </Tabs.Panel>
         <Tabs.Panel value="notes">
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <MoreLink href={config.socials.zenn.url} />
-          </Box>
+          <Section title="Notes">
+            <Stack>
+              <Box sx={{ display: "flex", justifyContent: "center" }}>
+                <MoreLink href={config.socials.zenn.url} />
+              </Box>
+            </Stack>
+          </Section>
         </Tabs.Panel>
       </Tabs>
       <Divider />
