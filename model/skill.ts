@@ -121,3 +121,9 @@ export type Skill = {
     url: "https://serverless.com/",
     imageSrc: "/images/skill/serverless.svg",
   };
+
+  export const githubAPI: Skill = {
+    name: "githubAPI",
+    url: "https://serverless.com/",
+    imageSrc: "/images/skill/serverless.svg",
+  };

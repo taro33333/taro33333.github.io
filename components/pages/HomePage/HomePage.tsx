@@ -9,6 +9,7 @@ import CertificationList from "./CertificationList";
 import EmailButton from "./EmailButton";
 import SkillList from "./SkillList";
 import ExperienceTimeline from "./ExperienceTimeline";
+import WorkList from "./WorkList";
 import Section from "../util/Section";
 import { config } from "../../../config";
 import { Box, Divider, Stack, Tabs, Title } from "@mantine/core";
@@ -79,9 +80,30 @@ const HomePage: NextPage = () => {
         </Tabs.Panel>
 
         <Tabs.Panel value="works">
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <MoreLink href={config.socials.zenn.url} />
-          </Box>
+          <Section title="Works">
+            <Stack>
+              {config.workGroups.map((workGroup) => (
+                <Box key={workGroup.name}>
+                  <Title
+                    order={3}
+                    sx={(theme) => ({
+                      textAlign: "center",
+                      marginBottom: theme.spacing.sm,
+                    })}
+                  >
+                    {workGroup.name}
+                  </Title>
+                  <WorkList works={workGroup.works} />
+                </Box>
+              ))}
+
+              <Box sx={{ display: "flex", justifyContent: "center" }}>
+                <MoreLink
+                  href={`${config.socials.github.url}?tab=repositories&type=source`}
+                />
+              </Box>
+            </Stack>
+          </Section>
         </Tabs.Panel>
         <Tabs.Panel value="notes">
           <Section title="Notes">
