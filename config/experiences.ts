@@ -6,7 +6,7 @@ export const experiences: Experience[] = [
     from: "2022-09",
   },
   {
-    title: "株式会社タンクルに入社",
+    title: "ベンチャー企業でフルスタックエンジニア",
     from: "2021-04",
     to: "2022-08",
   },
