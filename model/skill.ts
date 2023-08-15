@@ -25,16 +25,16 @@ export type Skill = {
     imageSrc: "/images/skill/typescript.svg",
   };
 
-  export const javascript: Skill = {
-    name: "JavaScript",
-    url: "https://developer.mozilla.org/docs/Web/JavaScript",
-    imageSrc: "/images/skill/javascript.svg",
+  export const python: Skill = {
+    name: "Python",
+    url: "https://www.python.org/",
+    imageSrc: "/images/skill/python.svg",
   };
 
   export const php: Skill = {
     name: "PHP",
-    url: "",
-    imageSrc: "",
+    url: "https://php.org/",
+    imageSrc: "/images/skill/php.svg",
   };
 
   /*
@@ -63,6 +63,30 @@ export type Skill = {
     name: "Next.js",
     url: "https://nextjs.org/",
     imageSrc: "/images/skill/nextjs.svg",
+  };
+
+  export const vue2: Skill = {
+    name: "Vue.js",
+    url: "https://ja.vuejs.org/",
+    imageSrc: "/images/skill/vue.svg",
+  };
+
+  export const nuxtjs: Skill = {
+    name: "Nuxt.js",
+    url: "https://v2.nuxt.com/ja/",
+    imageSrc: "/images/skill/nuxt.svg",
+  };
+
+  export const flask: Skill = {
+    name: "Flask",
+    url: "https://msiz07-flask-docs-ja.readthedocs.io/ja/latest/",
+    imageSrc: "/images/skill/flask.svg",
+  };
+
+  export const slim: Skill = {
+    name: "Slim",
+    url: "https://www.slimframework.com//",
+    imageSrc: "/images/skill/slim.svg",
   };
 
   export const mantine: Skill = {
@@ -114,6 +138,12 @@ export type Skill = {
     name: "Docker",
     url: "https://www.docker.com/",
     imageSrc: "/images/skill/docker.svg",
+  };
+
+  export const kubernetes: Skill = {
+    name: "Kubernetes",
+    url: "https://kubernetes.io/",
+    imageSrc: "/images/skill/kubernetes.svg",
   };
 
   export const serverless: Skill = {
