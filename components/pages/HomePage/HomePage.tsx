@@ -22,7 +22,6 @@ const HomePage: NextPage = () => {
     switch (tab) {
       case "about":
       case "works":
-      case "notes":
         return tab;
       default:
         return "about";
@@ -49,7 +48,6 @@ const HomePage: NextPage = () => {
         >
           <Tabs.Tab value="about">About</Tabs.Tab>
           <Tabs.Tab value="works">Works</Tabs.Tab>
-          <Tabs.Tab value="notes">Notes</Tabs.Tab>
         </Tabs.List>
         <Tabs.Panel value="about">
           <Section title="Skill">
@@ -101,15 +99,6 @@ const HomePage: NextPage = () => {
                 <MoreLink
                   href={`${config.socials.github.url}?tab=repositories&type=source`}
                 />
-              </Box>
-            </Stack>
-          </Section>
-        </Tabs.Panel>
-        <Tabs.Panel value="notes">
-          <Section title="Notes">
-            <Stack>
-              <Box sx={{ display: "flex", justifyContent: "center" }}>
-                <MoreLink href={config.socials.zenn.url} />
               </Box>
             </Stack>
           </Section>
