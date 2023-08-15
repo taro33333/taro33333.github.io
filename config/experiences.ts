@@ -12,7 +12,7 @@ export const experiences: Experience[] = [
   },
   {
     title: "未経験で SES 企業に入社",
-    from: "2018-06",
-    to: "2019-05",
+    from: "2019-05",
+    to: "2021-03",
   },
 ];
