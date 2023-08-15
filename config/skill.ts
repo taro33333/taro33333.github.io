@@ -20,6 +20,6 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     name: "Other",
-    skills: [skills.docker, skills.kubernetes],
+    skills: [skills.docker, skills.kubernetes, skills.graphql],
   },
 ];

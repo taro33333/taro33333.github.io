@@ -146,6 +146,12 @@ export type Skill = {
     imageSrc: "/images/skill/kubernetes.svg",
   };
 
+  export const graphql: Skill = {
+    name: "Graphql",
+    url: "https://graphql.org/",
+    imageSrc: "/images/skill/graphql.svg",
+  };
+
   export const serverless: Skill = {
     name: "Serverless",
     url: "https://serverless.com/",
