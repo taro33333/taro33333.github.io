@@ -9,7 +9,7 @@ import CertificationList from "./CertificationList";
 import EmailButton from "./EmailButton";
 import SkillList from "./SkillList";
 import ExperienceTimeline from "./ExperienceTimeline";
-import WorkList from "./WorkList";
+// import WorkList from "./WorkList";
 import Section from "../util/Section";
 import { config } from "../../../config";
 import { Box, Divider, Stack, Tabs, Title } from "@mantine/core";
@@ -21,7 +21,7 @@ const HomePage: NextPage = () => {
     const tab = router.query.tab;
     switch (tab) {
       case "about":
-      case "works":
+      // case "works":
         return tab;
       default:
         return "about";
@@ -47,7 +47,7 @@ const HomePage: NextPage = () => {
           sx={(theme) => ({ marginBottom: theme.spacing.sm })}
         >
           <Tabs.Tab value="about">About</Tabs.Tab>
-          <Tabs.Tab value="works">Works</Tabs.Tab>
+          {/* <Tabs.Tab value="works">Works</Tabs.Tab> */}
         </Tabs.List>
         <Tabs.Panel value="about">
           <Section title="Skill">
@@ -77,7 +77,7 @@ const HomePage: NextPage = () => {
 
         </Tabs.Panel>
 
-        <Tabs.Panel value="works">
+        {/* <Tabs.Panel value="works">
           <Section title="Works">
             <Stack>
               {config.workGroups.map((workGroup) => (
@@ -102,7 +102,7 @@ const HomePage: NextPage = () => {
               </Box>
             </Stack>
           </Section>
-        </Tabs.Panel>
+        </Tabs.Panel> */}
       </Tabs>
       <Divider />
       <Section title="Contact">
