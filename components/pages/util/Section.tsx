@@ -1,14 +1,14 @@
-import { Box, Container, Sx, Title } from "@mantine/core";
-import React, { memo } from "react";
+import { Box, Container, Sx, Title } from '@mantine/core'
+import React, { memo } from 'react'
 
 export type SectionProps = {
-  children: React.ReactNode;
-  title?: string;
-  sx?: Sx;
-};
+  children: React.ReactNode
+  title?: string
+  sx?: Sx
+}
 
 const Section: React.FC<SectionProps> = memo((props) => {
-  const { children, title, sx } = props;
+  const { children, title, sx } = props
 
   return (
     <Container pt="md" pb="lg">
@@ -16,8 +16,8 @@ const Section: React.FC<SectionProps> = memo((props) => {
         <Title
           order={2}
           sx={(theme) => ({
-            textAlign: "center",
-            marginBottom: theme.spacing.xs,
+            textAlign: 'center',
+            marginBottom: theme.spacing.xs
           })}
         >
           {title}
@@ -25,9 +25,9 @@ const Section: React.FC<SectionProps> = memo((props) => {
       )}
       <Box sx={sx}>{children}</Box>
     </Container>
-  );
-});
+  )
+})
 
-Section.displayName = "Section";
+Section.displayName = 'Section'
 
-export default Section;
+export default Section

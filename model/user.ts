@@ -1,6 +1,6 @@
 export type User = {
-    name: string;
-    tag: string;
-    description: string;
-    email: string;
-};
+  name: string
+  tag: string
+  description: string
+  email: string
+}

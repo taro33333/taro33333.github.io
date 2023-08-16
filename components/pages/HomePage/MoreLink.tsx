@@ -1,15 +1,15 @@
-import Link from "../util/Link";
-import Paper from "../util/Paper";
-import { Group, Text } from "@mantine/core";
-import React, { memo } from "react";
-import { IoChevronForward as ChevronRightIcon } from "react-icons/io5";
+import Link from '../util/Link'
+import Paper from '../util/Paper'
+import { Group, Text } from '@mantine/core'
+import React, { memo } from 'react'
+import { IoChevronForward as ChevronRightIcon } from 'react-icons/io5'
 
 export type MoreLinkProps = {
-  href: string;
-};
+  href: string
+}
 
 const MoreLink: React.FC<MoreLinkProps> = memo((props) => {
-  const { href } = props;
+  const { href } = props
 
   return (
     <Link external href={href}>
@@ -20,9 +20,9 @@ const MoreLink: React.FC<MoreLinkProps> = memo((props) => {
         </Group>
       </Paper>
     </Link>
-  );
-});
+  )
+})
 
-MoreLink.displayName = "MoreLink";
+MoreLink.displayName = 'MoreLink'
 
-export default MoreLink;
+export default MoreLink

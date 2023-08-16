@@ -1,15 +1,15 @@
-import ImageCard, { ImageCardProps } from "./ImageCard";
-import { ColProps, Grid } from "@mantine/core";
-import React, { memo } from "react";
+import ImageCard, { ImageCardProps } from './ImageCard'
+import { ColProps, Grid } from '@mantine/core'
+import React, { memo } from 'react'
 
 export type ImageCardListProps = {
-  items: Omit<ImageCardProps, "size">[];
-  size?: "md" | "lg";
-  col: ColProps;
-};
+  items: Omit<ImageCardProps, 'size'>[]
+  size?: 'md' | 'lg'
+  col: ColProps
+}
 
 const ImageCardList: React.FC<ImageCardListProps> = memo((props) => {
-  const { items, col, size = "md" } = props;
+  const { items, col, size = 'md' } = props
 
   return (
     <Grid>
@@ -19,9 +19,9 @@ const ImageCardList: React.FC<ImageCardListProps> = memo((props) => {
         </Grid.Col>
       ))}
     </Grid>
-  );
-});
+  )
+})
 
-ImageCardList.displayName = "ImageCardList";
+ImageCardList.displayName = 'ImageCardList'
 
-export default ImageCardList;
+export default ImageCardList

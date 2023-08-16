@@ -1,30 +1,20 @@
-import Link from "../util/Link";
-import Paper from "../util/Paper";
-import {
-  CopyButton,
-  Group,
-  Stack,
-  Text,
-  UnstyledButton,
-  useMantineTheme,
-} from "@mantine/core";
-import React, { memo } from "react";
-import {
-  MdCheck as CheckIcon,
-  MdOutlineMail as MailIcon,
-} from "react-icons/md";
+import Link from '../util/Link'
+import Paper from '../util/Paper'
+import { CopyButton, Group, Stack, Text, UnstyledButton, useMantineTheme } from '@mantine/core'
+import React, { memo } from 'react'
+import { MdCheck as CheckIcon, MdOutlineMail as MailIcon } from 'react-icons/md'
 
 export type EmailButtonProps = {
-  email: string;
-};
+  email: string
+}
 
 const EmailButton: React.FC<EmailButtonProps> = memo((props) => {
-  const { email } = props;
+  const { email } = props
 
-  const theme = useMantineTheme();
+  const theme = useMantineTheme()
 
   return (
-    <Stack sx={{ alignItems: "center" }}>
+    <Stack sx={{ alignItems: 'center' }}>
       <Link href={`mailto:${email}`} external>
         <Paper px="sm" py="xs" clickable>
           <Text>
@@ -42,9 +32,9 @@ const EmailButton: React.FC<EmailButtonProps> = memo((props) => {
             variant="subtle"
             onClick={copy}
             sx={(theme) => ({
-              display: "flex",
-              alignItems: "center",
-              fontSize: theme.fontSizes.sm,
+              display: 'flex',
+              alignItems: 'center',
+              fontSize: theme.fontSizes.sm
             })}
           >
             {copied ? (
@@ -53,15 +43,15 @@ const EmailButton: React.FC<EmailButtonProps> = memo((props) => {
                 コピーしました
               </>
             ) : (
-              "クリップボードにコピー"
+              'クリップボードにコピー'
             )}
           </UnstyledButton>
         )}
       </CopyButton>
     </Stack>
-  );
-});
+  )
+})
 
-EmailButton.displayName = "EmailButton";
+EmailButton.displayName = 'EmailButton'
 
-export default EmailButton;
+export default EmailButton

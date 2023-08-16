@@ -1,21 +1,21 @@
-import ImageCardList, { ImageCardListProps } from "../util/ImageCardList";
-import { Certification } from "../../../model/certification";
-import React, { memo, useMemo } from "react";
+import ImageCardList, { ImageCardListProps } from '../util/ImageCardList'
+import { Certification } from '../../../model/certification'
+import React, { memo, useMemo } from 'react'
 
 export type CertificationListProps = {
-  certifications: Certification[];
-};
+  certifications: Certification[]
+}
 
 const CertificationList: React.FC<CertificationListProps> = memo((props) => {
-  const { certifications } = props;
+  const { certifications } = props
 
-  const items = useMemo((): ImageCardListProps["items"] => {
+  const items = useMemo((): ImageCardListProps['items'] => {
     return certifications.map((certification) => ({
       name: certification.name,
       src: certification.imageSrc,
-      href: certification.url,
-    }));
-  }, [certifications]);
+      href: certification.url
+    }))
+  }, [certifications])
 
   return (
     <ImageCardList
@@ -23,12 +23,12 @@ const CertificationList: React.FC<CertificationListProps> = memo((props) => {
       size="lg"
       col={{
         span: 6,
-        sm: 3,
+        sm: 3
       }}
     />
-  );
-});
+  )
+})
 
-  CertificationList.displayName = "CertificationList";
+CertificationList.displayName = 'CertificationList'
 
-  export default CertificationList;
+export default CertificationList

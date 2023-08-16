@@ -1,14 +1,14 @@
-import Paper from "../util/Paper";
-import { Experience } from "../../../model/experience";
-import { Text, Timeline } from "@mantine/core";
-import React, { memo } from "react";
+import Paper from '../util/Paper'
+import { Experience } from '../../../model/experience'
+import { Text, Timeline } from '@mantine/core'
+import React, { memo } from 'react'
 
 export type ExperienceTimelineProps = {
-  experiences: Experience[];
-};
+  experiences: Experience[]
+}
 
 const ExperienceTimeline: React.FC<ExperienceTimelineProps> = memo((props) => {
-  const { experiences } = props;
+  const { experiences } = props
 
   return (
     <Timeline>
@@ -17,15 +17,15 @@ const ExperienceTimeline: React.FC<ExperienceTimelineProps> = memo((props) => {
           <Paper px="md" py="sm">
             <Text>{experience.title}</Text>
             <Text size="sm" color="dimmed">
-              {experience.from} - {experience.to ?? "now"}
+              {experience.from} - {experience.to ?? 'now'}
             </Text>
           </Paper>
         </Timeline.Item>
       ))}
     </Timeline>
-  );
-});
+  )
+})
 
-ExperienceTimeline.displayName = "ExperienceTimeline";
+ExperienceTimeline.displayName = 'ExperienceTimeline'
 
-export default ExperienceTimeline;
+export default ExperienceTimeline

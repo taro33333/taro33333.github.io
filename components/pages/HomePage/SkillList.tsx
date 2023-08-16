@@ -1,35 +1,33 @@
-import ImageCardList, {
-    ImageCardListProps,
-  } from "../util/ImageCardList";
-  import { Skill } from "../../../model/skill";
-  import React, { memo, useMemo } from "react";
+import ImageCardList, { ImageCardListProps } from '../util/ImageCardList'
+import { Skill } from '../../../model/skill'
+import React, { memo, useMemo } from 'react'
 
-  export type SkillListProps = {
-    skills: Skill[];
-  };
+export type SkillListProps = {
+  skills: Skill[]
+}
 
-  const SkillList: React.FC<SkillListProps> = memo((props) => {
-    const { skills } = props;
+const SkillList: React.FC<SkillListProps> = memo((props) => {
+  const { skills } = props
 
-    const items = useMemo((): ImageCardListProps["items"] => {
-      return skills.map((skill) => ({
-        name: skill.name,
-        src: skill.imageSrc,
-        href: skill.url,
-      }));
-    }, [skills]);
+  const items = useMemo((): ImageCardListProps['items'] => {
+    return skills.map((skill) => ({
+      name: skill.name,
+      src: skill.imageSrc,
+      href: skill.url
+    }))
+  }, [skills])
 
-    return (
-      <ImageCardList
-        items={items}
-        col={{
-          span: 6,
-          sm: 3,
-        }}
-      />
-    );
-  });
+  return (
+    <ImageCardList
+      items={items}
+      col={{
+        span: 6,
+        sm: 3
+      }}
+    />
+  )
+})
 
-  SkillList.displayName = "SkillList";
+SkillList.displayName = 'SkillList'
 
-  export default SkillList;
+export default SkillList

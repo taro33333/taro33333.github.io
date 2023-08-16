@@ -1,39 +1,38 @@
-
-import { NextPage } from "next";
-import { useRouter } from "next/router";
-import { useCallback, useMemo } from "react";
-import Socials from "./Socials";
-import MoreLink from "./MoreLink";
-import User from "./User";
-import CertificationList from "./CertificationList";
-import EmailButton from "./EmailButton";
-import SkillList from "./SkillList";
-import ExperienceTimeline from "./ExperienceTimeline";
+import { NextPage } from 'next'
+import { useRouter } from 'next/router'
+import { useCallback, useMemo } from 'react'
+import Socials from './Socials'
+import MoreLink from './MoreLink'
+import User from './User'
+import CertificationList from './CertificationList'
+import EmailButton from './EmailButton'
+import SkillList from './SkillList'
+import ExperienceTimeline from './ExperienceTimeline'
 // import WorkList from "./WorkList";
-import Section from "../util/Section";
-import { config } from "../../../config";
-import { Box, Divider, Stack, Tabs, Title } from "@mantine/core";
+import Section from '../util/Section'
+import { config } from '../../../config'
+import { Box, Divider, Stack, Tabs, Title } from '@mantine/core'
 
 const HomePage: NextPage = () => {
-  const router = useRouter();
+  const router = useRouter()
 
   const activeTab = useMemo(() => {
-    const tab = router.query.tab;
+    const tab = router.query.tab
     switch (tab) {
-      case "about":
-      // case "works":
-        return tab;
+      case 'about':
+        // case "works":
+        return tab
       default:
-        return "about";
+        return 'about'
     }
-  }, [router.query.tab]);
+  }, [router.query.tab])
 
   const handleChangeTab = useCallback(
     (tab: string) => {
-      router.replace({ query: { tab } }, undefined, { scroll: false });
+      router.replace({ query: { tab } }, undefined, { scroll: false })
     },
     [router]
-  );
+  )
 
   return (
     <Box>
@@ -42,10 +41,7 @@ const HomePage: NextPage = () => {
         <Socials socials={config.socials} />
       </Stack>
       <Tabs value={activeTab} onTabChange={handleChangeTab}>
-        <Tabs.List
-          position="center"
-          sx={(theme) => ({ marginBottom: theme.spacing.sm })}
-        >
+        <Tabs.List position="center" sx={(theme) => ({ marginBottom: theme.spacing.sm })}>
           <Tabs.Tab value="about">About</Tabs.Tab>
           {/* <Tabs.Tab value="works">Works</Tabs.Tab> */}
         </Tabs.List>
@@ -54,7 +50,7 @@ const HomePage: NextPage = () => {
             <Stack>
               {config.skillGroups.map((skillGroup) => (
                 <Box key={skillGroup.name}>
-                  <Title order={3} mb="sm" sx={{ textAlign: "center" }}>
+                  <Title order={3} mb="sm" sx={{ textAlign: 'center' }}>
                     {skillGroup.name}
                   </Title>
                   <SkillList skills={skillGroup.skills} />
@@ -71,10 +67,9 @@ const HomePage: NextPage = () => {
 
           <Divider />
 
-          <Section title="Experience" sx={{ display: "flex", justifyContent: "center" }}>
+          <Section title="Experience" sx={{ display: 'flex', justifyContent: 'center' }}>
             <ExperienceTimeline experiences={config.experiences} />
           </Section>
-
         </Tabs.Panel>
 
         {/* <Tabs.Panel value="works">
@@ -112,7 +107,7 @@ const HomePage: NextPage = () => {
         </Stack>
       </Section>
     </Box>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage

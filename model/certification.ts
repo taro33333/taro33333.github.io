@@ -1,5 +1,5 @@
 export type Certification = {
-    name: string;
-    url: string;
-    imageSrc: string;
-};
+  name: string
+  url: string
+  imageSrc: string
+}

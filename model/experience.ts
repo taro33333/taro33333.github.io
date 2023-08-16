@@ -1,5 +1,5 @@
 export type Experience = {
-    title: string;
-    from: string;
-    to?: string;
-};
+  title: string
+  from: string
+  to?: string
+}
