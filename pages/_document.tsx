@@ -9,7 +9,9 @@ export default class _Document extends Document {
   render() {
     return (
       <Html lang="ja">
-        <Head />
+        <Head>
+          <link rel="apple-touch-icon" sizes="180x180" href="public/favicon.ico" />
+        </Head>
         <body>
           <Main />
           <NextScript />
