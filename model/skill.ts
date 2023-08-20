@@ -149,6 +149,12 @@ export const graphql: Skill = {
   imageSrc: '/images/skill/graphql.svg'
 }
 
+export const k6: Skill = {
+  name: 'K6',
+  url: 'https://k6.io/',
+  imageSrc: '/images/skill/k6.svg'
+}
+
 export const serverless: Skill = {
   name: 'Serverless',
   url: 'https://serverless.com/',
