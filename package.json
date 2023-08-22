@@ -11,8 +11,8 @@
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'"
   },
   "dependencies": {
-    "@emotion/react": "11.9.0",
-    "@emotion/server": "11.4.0",
+    "@emotion/react": "11.11.1",
+    "@emotion/server": "11.11.0",
     "@mantine/core": "^6.0.19",
     "@mantine/hooks": "6.0.19",
     "@mantine/next": "6.0.19",
