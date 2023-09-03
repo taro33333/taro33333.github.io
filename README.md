@@ -3,4 +3,5 @@
 ## Next.jsで書いてみました！！
 GitHub Actions　+ GitHub Pagesで自動デプロイしてみました
 
-[スキル紹介プロフィール](ryotaroseto.github.io/)
+[スキル紹介プロフィール](https://ryotaroseto.github.io/)
+
