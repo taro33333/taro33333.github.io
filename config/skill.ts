@@ -34,10 +34,11 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       skills.postgres,
       skills.redis,
+      skills.kafka,
       skills.docker,
       skills.kubernetes,
+      skills.etcd,
       skills.k6,
-      skills.kafka,
     ]
   }
 ]

@@ -155,6 +155,12 @@ export const redis: Skill = {
   imageSrc: '/images/skill/redis.svg'
 }
 
+export const kafka: Skill = {
+  name: 'Kafka',
+  url: 'https://kafka.apache.org/',
+  imageSrc: '/images/skill/kafka.svg'
+}
+
 export const docker: Skill = {
   name: 'Docker',
   url: 'https://www.docker.com/',
@@ -167,10 +173,10 @@ export const kubernetes: Skill = {
   imageSrc: '/images/skill/kubernetes.svg'
 }
 
-export const kafka: Skill = {
-  name: 'Kafka',
-  url: 'https://kafka.apache.org/',
-  imageSrc: '/images/skill/kafka.svg'
+export const etcd: Skill = {
+  name: 'Etcd',
+  url: 'https://etcd.io/',
+  imageSrc: '/images/skill/etcd.svg'
 }
 
 export const k6: Skill = {
