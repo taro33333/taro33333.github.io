@@ -47,6 +47,12 @@ export const gin: Skill = {
   imageSrc: '/images/skill/gin.svg'
 }
 
+export const grpc: Skill = {
+  name: 'gRPC',
+  url: 'https://grpc.io/',
+  imageSrc: '/images/skill/grpc.svg'
+}
+
 export const laravel: Skill = {
   name: 'Laravel',
   url: 'https://laravel.com/',

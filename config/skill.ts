@@ -10,6 +10,7 @@ export const skillGroups: SkillGroup[] = [
     name: 'Framework / Library',
     skills: [
       skills.gin,
+      skills.grpc,
       skills.laravel,
       skills.react,
       skills.nextjs,
