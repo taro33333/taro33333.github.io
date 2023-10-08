@@ -53,6 +53,12 @@ export const grpc: Skill = {
   imageSrc: '/images/skill/grpc.svg'
 }
 
+export const graphql: Skill = {
+  name: 'Graphql',
+  url: 'https://graphql.org/',
+  imageSrc: '/images/skill/graphql.svg'
+}
+
 export const laravel: Skill = {
   name: 'Laravel',
   url: 'https://laravel.com/',
@@ -149,15 +155,9 @@ export const kubernetes: Skill = {
   imageSrc: '/images/skill/kubernetes.svg'
 }
 
-export const graphql: Skill = {
-  name: 'Graphql',
-  url: 'https://graphql.org/',
-  imageSrc: '/images/skill/graphql.svg'
-}
-
 export const kafka: Skill = {
   name: 'Kafka',
-  url: 'https://graphql.org/',
+  url: 'https://kafka.apache.org/',
   imageSrc: '/images/skill/kafka.svg'
 }
 

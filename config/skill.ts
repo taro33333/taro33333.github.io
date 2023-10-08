@@ -11,6 +11,7 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       skills.gin,
       skills.grpc,
+      skills.graphql,
       skills.laravel,
       skills.react,
       skills.nextjs,
@@ -33,7 +34,6 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       skills.docker,
       skills.kubernetes,
-      skills.graphql,
       skills.k6,
       skills.kafka,
     ]
