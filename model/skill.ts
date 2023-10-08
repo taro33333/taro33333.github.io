@@ -143,6 +143,18 @@ export const githubActions: Skill = {
  * other
  */
 
+export const postgres: Skill = {
+  name: 'Postgres',
+  url: 'https://www.postgresql.org/',
+  imageSrc: '/images/skill/postgres.svg'
+}
+
+export const redis: Skill = {
+  name: 'Redis',
+  url: 'https://redis.io/',
+  imageSrc: '/images/skill/redis.svg'
+}
+
 export const docker: Skill = {
   name: 'Docker',
   url: 'https://www.docker.com/',
