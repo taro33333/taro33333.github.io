@@ -7,7 +7,7 @@ export const certifications: Certification[] = [
     imageSrc: '/images/certification/cka.png'
   },
   {
-    name: 'Certified KubernetesApplication Developer\n(CKAD)',
+    name: 'Certified Kubernetes Application Developer\n(CKAD)',
     url: 'https://www.credly.com/earner/earned/badge/71a7c8ec-440e-42e0-ad51-f250dee8a81d',
     imageSrc: '/images/certification/ckad.png'
   }
