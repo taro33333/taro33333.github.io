@@ -185,10 +185,10 @@ export const k6: Skill = {
   imageSrc: '/images/skill/k6.svg'
 }
 
-export const serverless: Skill = {
-  name: 'Serverless',
-  url: 'https://serverless.com/',
-  imageSrc: '/images/skill/serverless.svg'
+export const helm: Skill = {
+  name: 'Helm',
+  url: 'https://helm.sh/',
+  imageSrc: '/images/skill/helm.svg'
 }
 
 export const githubAPI: Skill = {
