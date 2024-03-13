@@ -40,7 +40,8 @@ export const skillGroups: SkillGroup[] = [
       skills.etcd,
       skills.k6,
       skills.helm,
-      skills.istio
+      skills.istio,
+      skills.strimzi
     ]
   }
 ]

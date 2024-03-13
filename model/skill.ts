@@ -197,6 +197,12 @@ export const istio: Skill = {
   imageSrc: '/images/skill/istio.svg'
 }
 
+export const strimzi: Skill = {
+  name: 'Strimzi',
+  url: 'https://strimzi.io/',
+  imageSrc: '/images/skill/strimzi.svg'
+}
+
 export const githubAPI: Skill = {
   name: 'githubAPI',
   url: 'https://serverless.com/',
