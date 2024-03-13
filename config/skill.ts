@@ -39,7 +39,8 @@ export const skillGroups: SkillGroup[] = [
       skills.kubernetes,
       skills.etcd,
       skills.k6,
-      skills.helm
+      skills.helm,
+      skills.istio
     ]
   }
 ]

@@ -191,6 +191,12 @@ export const helm: Skill = {
   imageSrc: '/images/skill/helm.svg'
 }
 
+export const istio: Skill = {
+  name: 'Istio',
+  url: 'https://istio.io/',
+  imageSrc: '/images/skill/istio.svg'
+}
+
 export const githubAPI: Skill = {
   name: 'githubAPI',
   url: 'https://serverless.com/',
