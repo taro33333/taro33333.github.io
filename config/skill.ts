@@ -27,7 +27,10 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     name: 'CI / CD',
-    skills: [skills.githubActions]
+    skills: [
+      skills.githubActions,
+      skills.argoCD
+    ]
   },
   {
     name: 'Other',
@@ -41,7 +44,8 @@ export const skillGroups: SkillGroup[] = [
       skills.k6,
       skills.helm,
       skills.istio,
-      skills.strimzi
+      skills.strimzi,
+      skills.vault,
     ]
   }
 ]
