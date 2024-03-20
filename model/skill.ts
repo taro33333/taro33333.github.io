@@ -139,6 +139,12 @@ export const githubActions: Skill = {
   imageSrc: '/images/skill/githubactions.svg'
 }
 
+export const argoCD: Skill = {
+  name: 'Argo CD',
+  url: 'https://argoproj.github.io/cd/',
+  imageSrc: '/images/skill/argo.svg'
+}
+
 /*
  * other
  */
@@ -201,6 +207,12 @@ export const strimzi: Skill = {
   name: 'Strimzi',
   url: 'https://strimzi.io/',
   imageSrc: '/images/skill/strimzi.svg'
+}
+
+export const vault: Skill = {
+  name: 'HashiCorp Vault',
+  url: 'https://www.vaultproject.io/',
+  imageSrc: '/images/skill/vault.svg'
 }
 
 export const githubAPI: Skill = {
