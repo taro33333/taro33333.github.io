@@ -215,6 +215,12 @@ export const vault: Skill = {
   imageSrc: '/images/skill/vault.svg'
 }
 
+export const openTelemetry: Skill = {
+  name: 'OpenTelemetry',
+  url: 'https://opentelemetry.io/',
+  imageSrc: '/images/skill/openTelemetry.svg'
+}
+
 export const githubAPI: Skill = {
   name: 'githubAPI',
   url: 'https://serverless.com/',

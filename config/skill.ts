@@ -46,6 +46,7 @@ export const skillGroups: SkillGroup[] = [
       skills.istio,
       skills.strimzi,
       skills.vault,
+      skills.openTelemetry,
     ]
   }
 ]
