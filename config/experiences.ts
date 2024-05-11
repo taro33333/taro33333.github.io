@@ -2,7 +2,7 @@ import { Experience } from '../model/experience'
 
 export const experiences: Experience[] = [
   {
-    title: '株式会社ラクス SRE課に入社',
+    title: 'SaaS企業に入社',
     from: '2022-09'
   },
   {
