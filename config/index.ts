@@ -6,7 +6,7 @@ import { experiences } from './experiences'
 import { workGroups } from './work'
 
 export const config = {
-  url: 'https://github.com/RyotaroSeto',
+  url: 'https://github.com/taro33333',
   user,
   socials,
   certifications,

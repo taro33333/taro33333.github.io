@@ -3,7 +3,7 @@ import { Socials } from '../model/social'
 export const socials: Socials = {
   github: {
     name: 'GitHub',
-    url: 'https://github.com/RyotaroSeto',
+    url: 'https://github.com/taro33333',
     imageSrc: '/images/social/github.svg'
   },
   // twitter: {
