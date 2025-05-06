@@ -2,7 +2,11 @@ import { Experience } from '../model/experience'
 
 export const experiences: Experience[] = [
   {
-    title: 'SaaS企業に入社',
+    title: '事業会社でバックエンドエンジニア',
+    from: '2025-01'
+  },
+  {
+    title: 'SaaS企業でSREエンジニア',
     from: '2022-09'
   },
   {
