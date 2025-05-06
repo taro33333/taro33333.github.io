@@ -23,7 +23,10 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     name: 'Cloud',
-    skills: [skills.aws]
+    skills: [
+      skills.aws,
+      skills.googleCloud,
+    ]
   },
   {
     name: 'CI / CD',

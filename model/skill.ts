@@ -129,6 +129,12 @@ export const aws: Skill = {
   imageSrc: '/images/skill/aws.svg'
 }
 
+export const googleCloud: Skill = {
+  name: 'GoogleCloud',
+  url: 'https://cloud.google.com/',
+  imageSrc: '/images/skill/googlecloud.svg'
+}
+
 /*
  * ci/cd
  */
